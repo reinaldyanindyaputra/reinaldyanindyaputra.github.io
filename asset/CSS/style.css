@@ -41,6 +41,13 @@ table tr {
 }
 table tr:hover {background-color: lightgrey;}
 
+input[type=text] {
+  width: 30%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
 .button {
   background-color: rgb(7, 173, 7);
   border: none;
