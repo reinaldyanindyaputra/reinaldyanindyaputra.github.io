@@ -52,6 +52,7 @@ body {
 }
 
 .a {
+  border: 1px;
   padding: 1em;
   text-align: center;
 }
@@ -94,9 +95,11 @@ th {
     text-align: center;
     background-color: lightcoral;
 }
+
 table tr {
   background-color: white;
 }
+
 table tr:hover {background-color: lightgrey;}
 
 input[type=text] {
