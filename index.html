@@ -2,150 +2,276 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Reinaldy</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinaldy Portofolio alt</title>
+    <link rel="stylesheet" href="asset/CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="asset/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="asset/CSS/staticstyle.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
+
 </head>
 
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+<body class="bg-light">
+    <!-- navbar start-->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
         <div class="container-fluid">
+            <button class=" btn btn-secondary btn-danger px-3 navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold text-dark" aria-current="page" href="#about">About Me</a>
+                        <a class="nav-link active fw-bold text-dark dropdown-item" aria-current="page"
+                            href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold text-dark" aria-current="page" href="portofolio.html">Experience</a>
+                        <a class="nav-link active fw-bold text-dark dropdown-item" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold text-dark" aria-current="page" href="#contact">Contact</a>
+                        <a class="nav-link active fw-bold text-dark dropdown-item" href="#Experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-dark dropdown-item" href="#contact">Contact Me</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- hero -->
-    <div id="hero" class="container d-flex flex-column align-items-center justify-content-center mb-5">
-        <img src="asset/img/Reinaldy 2 .png" class="image-hero rounded-circle" alt="Reinaldy">
-        <h1 class="title fw-bold">Reinaldy Anindya Putra</h1>
-        <p class="subtitle">People Specialist</p>
-        <i class="bi bi-arrow-down"></i>
-    </div>
-    <!-- About Me -->
-    <div id="about" class="container mb-5">
-        <h2 class="text-center mb-3">About Me</h2>
-        <div class="row">
-            <div class="col 6">
-                <img src="asset/img/Reinaldy 3.png" class="image-abt shadow rounded w-100" alt="">
-            </div>
-            <div class="col-6">
-                <p class="text-abt text-secondary lh-lg">Hello! i'm A highly driven and motivated undergraduate
-                    5<sup>th</sup>
-                    semester Government Science of Brawijaya University. Who has a strong passion about Government
-                    Institutional with a focus on Bureaucratic reformand and human resource people development and
-                    internal organizational engagement. Reinaldy has been well equipped with advanced skill like
-                    problem solving and critical thinking through his previous experiences in organizations.</p>
-            </div>
-        </div>
-    </div>
-    <!-- Skill -->
-    <div class="container mb-5">
-        <h2 class="text-center mb-3"> My Skill</h2>
-        <div class="row">
-            <div class="col-3">
-                <div class="card">
-                    <img src="asset/img/about-6.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Design Sprint</h5>
-                        <p class="card-text">a time-constrained, five-phase process that uses design thinking with the
-                            aim of reducing the risk when bringing a new product, service or a feature to the market.
+    <!-- home -->
+    <section class="home py-5" id="home">
+        <div class="container-lg">
+            <div class="row min-vh-100 align-items-center align-content-center">
+                <div class="col-md-6">
+                    <div class="home-img text-center">
+                        <img src="asset/img/Reinaldy skecth.jpg" class="rounded-circle mw-100 shadow-lg " height="350px"
+                            width="350px" alt="profile picture">
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-first">
+                    <div class="home-text">
+                        <p class="text-muted mb-1">Hello I'm</p>
+                        <h1 class="text-danger text-uppercase fs-1 fw-bold">People Specialist</h1>
+                        <h2 class="fs-4">Reinaldy Anindya Putra</h2>
+                        <p class="mt-4 text-muted">As someone who has a high interest in developing and accelerating
+                            digital transformation in the Indonesian government and the quality of human resources in
+                            Indonesia.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="asset/img/about-4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Teamworking</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about py-5" id="about">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">About Me</h2>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="asset/img/about-3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Design Thinking</h5>
-                        <p class="card-text">strategic and practical procedures used by designers in the process of
-                            designing, and has been developed about how people reason when engaging with design
-                            problems.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <h3 class="fs-4 mb-3">Who Is Reinaldy?</h3>
+                        <p class="text-muted">Reinaldy is highly driven and motivated undergraduate 5<sup>th</sup>
+                            semester Government Science of Brawijaya University. Who has a strong passion about
+                            accelerating Digital Transformation in Government Institutional with a focus on Bureaucratic
+                            reform and human resource people development and internal organizational engagement.
+                            Reinaldy has been well equipped with advanced skill like Design Thinking, problem solving
+                            skill and some front-end skill (html,css) through his previous experiences in organizations.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 d-flex align-items-center">
+                            <a href="asset/CV_Reinaldy Anindya Putra.pdf" class="btn px-3 btn-danger me-5">Download
+                                CV</a>
+                            <div class="social-links">
+                                <a href="http://https://www.instagram.com/reinaldy.ap/" class="text-dark me-2"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="http://www.linkedin.com/in/reinaldy-anindya-putra" class="text-dark me-2"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="asset/img/about-7.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Html and CSS</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Html</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high"
+                                style="width: 35%;" aria-valuenow="35" aria-valuemin="40" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Css</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high"
+                                style="width: 35%;" aria-valuenow="35" aria-valuemin="40" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Design Thinking</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high"
+                                style="width: 60%;" aria-valuenow="60" aria-valuemin="40" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3 class="fs-6">Leadership</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high"
+                                style="width: 80%;" aria-valuenow="80" aria-valuemin="40" aria-valuemax="100"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contact -->
-    <div id="contact" class="container mb-5">
-        <h2 class="text-center mb-3">Contact Me</h2>
-        <form class="col-6 mx-auto">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Your Comment</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="button" class="btn btn-primary w-100">Submit</button>
-        </form>
-    </div>
+    </section>
 
-    <!-- Footer -->
-    <div class="container-fluid">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+    <!-- experience -->
+    <section class="portofolio py-5" id="Experience">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">Experience</h2>
+                    </div>
+                </div>
             </div>
-            <ul class="nav col-md-3 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-linkedin"></i></svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></i></svg></a></li>
-            </ul>
-        </footer>
-    </div>
-    </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portofolio-item">
+                        <img src="asset/img/PetaCareeras.png" class="w-100 img-thumbnail" alt="PetaCareers">
+                        <h3 class="text-capitalize fs-5 my-2">PetaCareers</h3>
+                        <P class="mb-4">As People & Culture Associate</P>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portofolio-item">
+                        <img src="asset/img/Rei - PAO - Sertifikat BEM FISIP 2021 (2)_page-0001.jpg"
+                            class="w-100 img-thumbnail" height="100px" width="250px" alt="bem 2021">
+                        <h3 class="text-capitalize fs-5 my-2">BEM FISIP 2021</h3>
+                        <P class="mb-4">As Staf Ahli Pembinaan Aparatur Organisasi</P>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portofolio-item">
+                        <img src="asset/img/STAF AHLI_REINALDY ANINDYA PUTRA (1).png" class="w-100 img-thumbnail"
+                            alt="HIMAP">
+                        <h3 class="text-capitalize fs-5 my-2">Himpunan Mahasiswa Ilmu Pemerintahan'21</h3>
+                        <P class="mb-4">As Staf Ahli Divisi Kaderisasi</P>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portofolio-item">
+                        <img src="asset/img/REINALDY ANINDYA PUTRA-01.jpg" class="w-100 img-thumbnail"
+                            alt="PetaCareers">
+                        <h3 class="text-capitalize fs-5 my-2">BEM FISIP 2020</h3>
+                        <P class="mb-4">As Staf Magang Biro Pusat jaminan Mutu Organisasi</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+    <!-- Contact Me -->
+    <section class="contact py-5 bg-white" id="contact">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">Contact Me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="contact-item d-flex mb-3">
+                            <div class="icon fs-4 text-danger">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="text ms-3">
+                                <h2 class="fs-5">Email</h2>
+                                <p class="text-muted">reinaldyanindya26@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-3">
+                            <div class="icon fs-4 text-danger">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="text ms-3">
+                                <h2 class="fs-5">Phone</h2>
+                                <p class="text-muted">+62-81234769008</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-3">
+                            <div class="icon fs-4 text-danger">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="text ms-3">
+                                <h2 class="fs-5">Current Location</h2>
+                                <p class="text-muted">Malang City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="contact-form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4">
+                                        <input type="text" placeholder="Your Name"
+                                            class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <input type="text" placeholder="Your Email"
+                                            class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 mb-4">
+                                        <input type="text" placeholder="Subject"
+                                            class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 mb-4">
+                                        <textarea rows="5" placeholder="Your Message"
+                                            class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button type="submit" class="btn btn-danger px-3">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer border-top py-4">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="m-0 text-muted">&copy; 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="asset/Js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
